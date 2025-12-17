@@ -914,3 +914,73 @@ body {
         gap: 0.5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#viewer360 {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 4px solid #000;
+  background: #000;
+}
+
+#scene360 {
+  width: 220%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  cursor: grab;
+}
+
+/* Hazard hotspots */
+.hotspot {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hotspot:hover {
+  background: darkred;
+}
+
+/* Scene buttons */
+.scene-controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

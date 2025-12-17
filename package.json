@@ -15,6 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.22.1"
+    "archiver": "^7.0.1",
+    "basic-auth": "^2.0.1",
+    "express": "^4.22.1",
+    "fs": "^0.0.1-security",
+    "serve-index": "^1.9.1"
   }
 }

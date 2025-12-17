@@ -179,7 +179,7 @@ function completeHazardModule() {
     loadState();
     TrainingState.hazardCompleted = true;
     saveState();
-    window.location.href = 'result.html';
+    window.location.href = '/result';
 }
 
 function initHandlingModule() {
@@ -326,7 +326,7 @@ function completeHandlingModule() {
     loadState();
     TrainingState.handlingCompleted = true;
     saveState();
-    window.location.href = 'result.html';
+    window.location.href = '/result';
 }
 
 function displayResults() {
@@ -429,4 +429,83 @@ function resetAllProgress() {
 
 document.addEventListener('DOMContentLoaded', function() {
     loadState();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+const scene360 = document.getElementById("scene360");
+
+/* 360 scenes (real images you downloaded) */
+const scenes = [
+  "images/warehouse1.jpg",
+  "images/warehouse2.jpg",
+  "images/warehouse3.jpg"
+];
+
+let dragging = false;
+let lastX = 0;
+let bgX = 0;
+
+/* Load default scene */
+scene360.style.backgroundImage = `url('${scenes[0]}')`;
+
+/* Change scene */
+function loadScene(index) {
+  bgX = 0;
+  scene360.style.backgroundPositionX = "0px";
+  scene360.style.backgroundImage = `url('${scenes[index]}')`;
+}
+
+/* Mouse drag */
+scene360.addEventListener("mousedown", e => {
+  dragging = true;
+  lastX = e.clientX;
+  scene360.style.cursor = "grabbing";
+});
+
+window.addEventListener("mouseup", () => {
+  dragging = false;
+  scene360.style.cursor = "grab";
+});
+
+window.addEventListener("mousemove", e => {
+  if (!dragging) return;
+  const dx = e.clientX - lastX;
+  lastX = e.clientX;
+  bgX += dx;
+  scene360.style.backgroundPositionX = bgX + "px";
+});
+
+/* Touch support */
+scene360.addEventListener("touchstart", e => {
+  lastX = e.touches[0].clientX;
+});
+
+scene360.addEventListener("touchmove", e => {
+  const dx = e.touches[0].clientX - lastX;
+  lastX = e.touches[0].clientX;
+  bgX += dx;
+  scene360.style.backgroundPositionX = bgX + "px";
+});
+
+/* Hazard interaction */
+document.querySelectorAll(".hotspot").forEach(h => {
+  h.addEventListener("click", () => {
+    alert("Hazard identified: " + h.dataset.hazard);
+
+    let score = Number(sessionStorage.getItem("score")) || 0;
+    sessionStorage.setItem("score", score + 1);
+
+    h.style.display = "none"; // Prevent double scoring
+  });
 });
