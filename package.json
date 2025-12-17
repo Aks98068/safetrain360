@@ -1,0 +1,20 @@
+{
+  "name": "safetrain360",
+  "version": "1.0.0",
+  "description": "Interactive 360-degree warehouse safety training system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "safety",
+    "training",
+    "warehouse"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}
