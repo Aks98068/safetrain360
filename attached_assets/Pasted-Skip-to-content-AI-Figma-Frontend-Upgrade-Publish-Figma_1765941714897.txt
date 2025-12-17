@@ -1,0 +1,183 @@
+Skip to content
+
+
+AI
+
+
+
+
+Figma Frontend
+
+
+Upgrade
+
+
+
+Publish
+
+
+Figma Frontend
+Plan
+Build
+Files
+
+
+
+Commands
+Search
+Your app is not running
+
+Run
+to preview your app.
+
+https://www.figma.com/make/QTkea1wVS9AY2fyUT1YIP3/High-Fidelity-UI-UX-Design?t=3vEW9IbbFSCuGfIC-1 and only use html,css and javascript and nodejs for serving the frontend
+
+11 minutes ago
+I understand you need to build SafeTrain360, a warehouse safety training web application prototype as described in your university assessment requirements. However, I cannot access the Figma design file you've shared, as it requires authentication.
+
+Let me create a plan based on your detailed project specification document. I'll build a complete, interactive front-end prototype using HTML, CSS, and vanilla JavaScript with a Node.js server for serving the frontend.
+
+An interactive warehouse safety training web application prototype (SafeTrain360) with hazard perception and manual handling modules using vanilla HTML, CSS, and JavaScript
+I'll include the following features:
+
+Home/landing page with clear 'Start Training' button and system description
+Module selection page with Hazard Perception and Manual Handling options
+Hazard Perception module with simulated 360-degree warehouse scene, clickable hazard hotspots, immediate feedback, and score tracking
+Manual Handling module with lifting scenario, posture selection, and educational feedback on correct techniques
+Results and feedback page displaying final score, safety summary, and restart/exit options
+Simple navigation with large buttons and clear visual hierarchy optimized for low-tech users
+Score tracking system using JavaScript variables across modules
+Responsive layout with accessibility-friendly fonts, high contrast, and minimal text with strong visual cues
+Send a message below to revise the plan.
+
+Get notified when your app is ready
+
+
+Scroll to latest
+
+Back
+What would you like to change about the plan?
+
+https://www.figma.com/make/QTkea1wVS9AY2fyUT1YIP3/High-Fidelity-UI-UX-Design?t=3vEW9IbbFSCuGfIC-1 and only use html,css and javascript and nodejs for serving the frontend
+
+
+
+
+Loading... - Replit
+
+Attached file
+Pasted-Build-a-complete-front-end-web-application-prototype-us_1765941432448.txt
+Build a complete, front-end web application prototype using HTML, CSS, and vanilla JavaScript only (no backend, no database) for an interactive 360-degree warehouse safety training system called SafeTrain360.
+
+This application is developed in response to a client brief for a logistics and warehousing company and is part of the University of Sunderland CET257 Enterprise Project assessment (Tasks A6 and A7).
+
+The goal is to create a fully interactive, demo-ready prototype that demonstrates core functionality, user flow, and training logic, not a production-level system.
+
+Project Context
+
+Training focus: Hazard Perception and Manual Handling
+
+Target users: Warehouse operatives with low technical skills
+
+Usage context: Workplace or training room, short training sessions
+
+User & Design Requirements (from PACT Analysis)
+
+Very simple navigation
+
+Large buttons and clear instructions
+
+Minimal text with strong visual cues
+
+Fast interaction and immediate feedback
+
+Core Functional Requirements to Implement
+1. Home / Landing Page
+
+System name and brief description
+
+Clear “Start Training” button
+
+2. Module Selection Page
+
+Two selectable modules:
+
+Hazard Perception
+
+Manual Handling
+
+3. Hazard Perception Module
+
+Simulated 360-degree warehouse scene using an image
+
+Clickable hazard hotspots (e.g. loose boxes, spillages, blocked exits)
+
+Immediate feedback for each selection
+
+Score tracking using JavaScript
+
+4. Manual Handling Module
+
+Lifting scenario displayed visually
+
+User selects correct or incorrect posture
+
+Feedback explaining correct manual handling technique
+
+5. Results & Feedback Page
+
+Display final score
+
+Safety feedback summary
+
+Options to restart training or exit
+
+Non-Functional Requirements to Reflect
+
+Consistent layout and navigation across pages
+
+Clear visual hierarchy
+
+Accessibility-friendly font sizes and contrast
+
+Fast loading and response times
+
+No unnecessary complexity
+
+Technical Constraints
+
+Use only HTML, CSS, and vanilla JavaScript
+
+No login, no database, no backend
+
+Use JavaScript variables to simulate progress and scoring
+
+Use placeholder images where needed
+
+Code must be clean, commented, and suitable for academic review
+
+Application Structure Requirement
+/SafeTrain360
+├── index.html        (Home)
+├── modules.html      (Module selection)
+├── hazard.html       (Hazard perception)
+├── handling.html     (Manual handling)
+├── result.html       (Results & feedback)
+├── style.css
+└── script.js
+
+Assessment & Client Alignment
+
+The application must clearly demonstrate:
+
+User flow
+
+Interaction logic
+
+Training effectiveness
+
+Must be suitable for client presentation and live demonstration
+
+Must align with University marking criteria for prototype demonstration (A7)
+
+Generate the full HTML, CSS, and JavaScript code for all files, ensuring the prototype is fully interactive, clickable, and demo-ready.
