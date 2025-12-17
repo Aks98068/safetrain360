@@ -458,10 +458,19 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     border-radius: 4px;
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 0;
 }
 
 .hazard-hotspot:hover {
     transform: scale(1.05);
+}
+
+.hazard-hotspot:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    transform: scale(1.08);
 }
 
 .hazard-hotspot.found {
@@ -603,11 +612,19 @@ body {
     border: 3px solid transparent;
     text-align: center;
     max-width: 250px;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .posture-card:hover {
     border-color: var(--primary-light);
     transform: translateY(-4px);
+}
+
+.posture-card:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    border-color: var(--primary-light);
 }
 
 .posture-card.selected {

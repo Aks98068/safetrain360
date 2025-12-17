@@ -44,8 +44,8 @@
                     <h2 class="scenario-title">Scenario 1: Lifting a Heavy Box from the Floor</h2>
                     <p class="scenario-question">Which posture is CORRECT for lifting a heavy box from the floor?</p>
                     
-                    <div class="posture-options">
-                        <div class="posture-card" data-correct="false" onclick="selectPosture(this, 1)">
+                    <div class="posture-options" role="group" aria-label="Posture selection for scenario 1">
+                        <button class="posture-card" data-correct="false" onclick="selectPosture(this, 1)" type="button" aria-label="Bending from waist with straight legs - incorrect posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <circle cx="75" cy="30" r="20" fill="#2563eb"/>
@@ -59,9 +59,9 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Bending from waist, straight legs</p>
-                        </div>
+                        </button>
 
-                        <div class="posture-card" data-correct="true" onclick="selectPosture(this, 1)">
+                        <button class="posture-card" data-correct="true" onclick="selectPosture(this, 1)" type="button" aria-label="Bending knees with straight back - correct posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <circle cx="75" cy="50" r="20" fill="#2563eb"/>
@@ -76,7 +76,7 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Bending knees, straight back</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -84,8 +84,8 @@
                     <h2 class="scenario-title">Scenario 2: Carrying a Load</h2>
                     <p class="scenario-question">Which is the CORRECT way to carry a heavy load?</p>
                     
-                    <div class="posture-options">
-                        <div class="posture-card" data-correct="true" onclick="selectPosture(this, 2)">
+                    <div class="posture-options" role="group" aria-label="Posture selection for scenario 2">
+                        <button class="posture-card" data-correct="true" onclick="selectPosture(this, 2)" type="button" aria-label="Carrying load close to body with arms bent - correct posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <circle cx="75" cy="30" r="20" fill="#2563eb"/>
@@ -98,9 +98,9 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Close to body, arms bent</p>
-                        </div>
+                        </button>
 
-                        <div class="posture-card" data-correct="false" onclick="selectPosture(this, 2)">
+                        <button class="posture-card" data-correct="false" onclick="selectPosture(this, 2)" type="button" aria-label="Carrying load with arms stretched out - incorrect posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <circle cx="75" cy="30" r="20" fill="#2563eb"/>
@@ -113,7 +113,7 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Arms stretched out</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -121,8 +121,8 @@
                     <h2 class="scenario-title">Scenario 3: Placing a Box on a Shelf</h2>
                     <p class="scenario-question">Which technique is CORRECT for placing a box on a high shelf?</p>
                     
-                    <div class="posture-options">
-                        <div class="posture-card" data-correct="false" onclick="selectPosture(this, 3)">
+                    <div class="posture-options" role="group" aria-label="Posture selection for scenario 3">
+                        <button class="posture-card" data-correct="false" onclick="selectPosture(this, 3)" type="button" aria-label="Twisting while lifting overhead - incorrect posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <rect x="100" y="20" width="45" height="180" fill="#6b7280"/>
@@ -137,9 +137,9 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Twisting while lifting overhead</p>
-                        </div>
+                        </button>
 
-                        <div class="posture-card" data-correct="true" onclick="selectPosture(this, 3)">
+                        <button class="posture-card" data-correct="true" onclick="selectPosture(this, 3)" type="button" aria-label="Using step ladder and facing shelf directly - correct posture">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <rect x="100" y="20" width="45" height="180" fill="#6b7280"/>
@@ -154,7 +154,7 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Using step ladder, facing shelf</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
@@ -162,8 +162,8 @@
                     <h2 class="scenario-title">Scenario 4: Team Lifting</h2>
                     <p class="scenario-question">What is the CORRECT approach for lifting a very heavy item?</p>
                     
-                    <div class="posture-options">
-                        <div class="posture-card" data-correct="true" onclick="selectPosture(this, 4)">
+                    <div class="posture-options" role="group" aria-label="Posture selection for scenario 4">
+                        <button class="posture-card" data-correct="true" onclick="selectPosture(this, 4)" type="button" aria-label="Two people lifting together - correct approach">
                             <div class="posture-image">
                                 <svg viewBox="0 0 200 200" width="200" height="200">
                                     <circle cx="50" cy="50" r="15" fill="#2563eb"/>
@@ -180,9 +180,9 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Two people lifting together</p>
-                        </div>
+                        </button>
 
-                        <div class="posture-card" data-correct="false" onclick="selectPosture(this, 4)">
+                        <button class="posture-card" data-correct="false" onclick="selectPosture(this, 4)" type="button" aria-label="Lifting very heavy item alone - incorrect approach">
                             <div class="posture-image">
                                 <svg viewBox="0 0 150 200" width="150" height="200">
                                     <circle cx="75" cy="30" r="18" fill="#2563eb"/>
@@ -197,7 +197,7 @@
                                 </svg>
                             </div>
                             <p class="posture-label">Lifting alone anyway</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
